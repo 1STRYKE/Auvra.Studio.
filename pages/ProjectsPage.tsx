@@ -88,7 +88,7 @@ const projects: Project[] = [
     id: 'aether-echoes',
     title: 'Aether Echoes',
     category: 'Indie Game Studio',
-    image: 'https://ibb.co/vCrfCn42',
+    image: 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&q=80&w=2071',
     headline: 'Forging New Worlds',
     description: 'An independent game studio specializing in immersive worlds and mechanically driven narratives. Built with a modern tech stack to ensure seamless cross-platform performance and aesthetic excellence.',
     link: 'https://aether-echoes-auvra.vercel.app/',
