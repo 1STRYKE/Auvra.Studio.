@@ -12,6 +12,8 @@ import {
   Box,
   MousePointer2,
   Cpu,
+  Gamepad2,
+  Sparkles,
   LucideIcon
 } from 'lucide-react';
 import { Button } from '../components/Button';
@@ -77,6 +79,39 @@ const projects: Project[] = [
           { label: 'Next.js' },
           { label: 'Three.js' },
           { label: 'Motion' },
+        ]
+      }
+    ]
+  },
+  {
+    id: 'aether-echoes',
+    title: 'Aether Echoes',
+    category: 'Indie Game Studio',
+    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=2070',
+    headline: 'Forging New Worlds',
+    description: 'An independent game studio specializing in immersive worlds and mechanically driven narratives. Built with a modern tech stack to ensure seamless cross-platform performance and aesthetic excellence.',
+    link: 'https://aether-echoes-auvra.vercel.app/',
+    features: [
+      {
+        title: 'Creative Engineering',
+        icon: Gamepad2,
+        iconColorClass: 'text-orange-400 bg-orange-500/10',
+        description: 'Utilizing React and TypeScript to build complex, responsive game interfaces and interactive world-building logic.',
+        tags: [
+          { label: 'React' },
+          { label: 'TypeScript' },
+          { label: 'Indie' },
+        ]
+      },
+      {
+        title: 'Visual Magic',
+        icon: Sparkles,
+        iconColorClass: 'text-pink-400 bg-pink-500/10',
+        description: 'Pushing the boundaries of web-based gaming with high-fidelity visuals, HTML5 canvas optimization, and fluid animations.',
+        tags: [
+          { label: 'HTML5' },
+          { label: 'CSS3' },
+          { label: 'Animation' },
         ]
       }
     ]
