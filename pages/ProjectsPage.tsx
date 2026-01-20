@@ -44,6 +44,7 @@ interface Project {
   headline: string;
   description: string;
   link?: string;
+  sourceLink?: string;
   features: FeatureSection[];
 }
 
@@ -91,6 +92,7 @@ const projects: Project[] = [
     headline: 'Forging New Worlds',
     description: 'An independent game studio specializing in immersive worlds and mechanically driven narratives. Built with a modern tech stack to ensure seamless cross-platform performance and aesthetic excellence.',
     link: 'https://aether-echoes-auvra.vercel.app/',
+    sourceLink: 'https://github.com/1STRYKE/AetherEchoes',
     features: [
       {
         title: 'Creative Engineering',
@@ -234,7 +236,13 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                   View Experience
                 </Button>
               )}
-              <Button variant="outline" className="w-full sm:w-auto" size="lg" icon={<ExternalLink size={18} />}>
+              <Button 
+                variant="outline" 
+                className="w-full sm:w-auto" 
+                size="lg" 
+                icon={<ExternalLink size={18} />}
+                onClick={() => project.sourceLink ? window.open(project.sourceLink, '_blank') : null}
+              >
                 Source Access
               </Button>
             </div>
